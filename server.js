@@ -11,10 +11,11 @@ let nodeify = require('bluebird-nodeify')
 let mime = require('mime-types')
 let rimraf = require('rimraf')
 let mkdirp = require('mkdirp')
+let argv = require('yargs').argv
 
 const NODE_ENV = process.env.NODE_ENV || 'development'
 const PORT = process.env.PORT || 8000
-const ROOT_DIR = path.resolve(process.cwd())
+const ROOT_DIR = path.resolve(argv.dir || process.cwd())
 
 
 function* main() {

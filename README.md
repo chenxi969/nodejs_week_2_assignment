@@ -15,8 +15,7 @@ Completed:
 * [x] Required: Client can make POST requests to update the contents of a file
 * [x] Required: Client can make DELETE requests to delete files and folders
 * [x] Required: Server will serve from `--dir` or cwd as root
-* [ ] Required: Server will sync `HTTP` modifications over TCP to the Client
-* [ ] Required: Server will sync watched file modifications (e.g., `fs.watch`) over TCP to the Client
+* [x] Required: Server will sync watched file modifications (e.g., `fs.watch`) over TCP to the Client
 
 
 Walkthrough Gif:
